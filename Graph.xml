@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--start:起始结点, end:终止结点, requiredStep:要求经过的结点数-->
+<Graph start="0" end="17" requiredStep="9">
+	<Edges>
+		<!--有向图的所有边-->
+		<Edge start="0"  end="1"  weight="3" />
+		<Edge start="0"  end="2"  weight="1" />
+		<Edge start="0"  end="3"  weight="1" />
+		<Edge start="1"  end="0"  weight="3" />
+		<Edge start="1"  end="2"  weight="1" />
+		<Edge start="1"  end="4"  weight="1" />
+		<Edge start="1"  end="9"  weight="4" />
+		<Edge start="2"  end="0"  weight="1" />
+		<Edge start="2"  end="1"  weight="1" />
+		<Edge start="2"  end="3"  weight="1" />
+		<Edge start="2"  end="4"  weight="2" />
+		<Edge start="2"  end="5"  weight="1" />
+		<Edge start="3"  end="0"  weight="1" />
+		<Edge start="3"  end="2"  weight="1" />
+		<Edge start="3"  end="5"  weight="2" />
+		<Edge start="3"  end="6"  weight="2" />
+		<Edge start="3"  end="7"  weight="1" />
+		<Edge start="4"  end="1"  weight="1" />
+		<Edge start="4"  end="2"  weight="2" />
+		<Edge start="4"  end="5"  weight="1" />
+		<Edge start="4"  end="9"  weight="1" />
+		<Edge start="5"  end="2"  weight="1" />
+		<Edge start="5"  end="3"  weight="2" />
+		<Edge start="5"  end="4"  weight="1" />
+		<Edge start="5"  end="6"  weight="1" />
+		<Edge start="5"  end="9"  weight="3" />
+		<Edge start="5"  end="10" weight="1" />
+		<Edge start="5"  end="12" weight="3" />
+		<Edge start="6"  end="3"  weight="2" />
+		<Edge start="6"  end="5"  weight="1" />
+		<Edge start="6"  end="7"  weight="1" />
+		<Edge start="6"  end="8"  weight="2" />
+		<Edge start="6"  end="12" weight="2" />
+		<Edge start="6"  end="14" weight="3" />
+		<Edge start="6"  end="13" weight="4" />
+		<Edge start="7"  end="3"  weight="1" />
+		<Edge start="7"  end="6"  weight="1" />
+		<Edge start="7"  end="8"  weight="1" />
+		<Edge start="8"  end="7"  weight="1" />
+		<Edge start="8"  end="6"  weight="2" />
+		<Edge start="8"  end="14" weight="1" />
+		<Edge start="8"  end="15" weight="3" />
+		<Edge start="9"  end="1"  weight="4" />
+		<Edge start="9"  end="4"  weight="1" />
+		<Edge start="9"  end="5"  weight="3" />
+		<Edge start="9"  end="10" weight="1" />
+		<Edge start="9"  end="11" weight="1" />
+		<Edge start="10" end="9"  weight="1" />
+		<Edge start="10" end="5"  weight="1" />
+		<Edge start="10" end="11" weight="1" />
+		<Edge start="10" end="12" weight="2" />
+		<Edge start="11" end="9"  weight="1" />
+		<Edge start="11" end="10" weight="1" />
+		<Edge start="11" end="16" weight="1" />
+		<Edge start="11" end="12" weight="1" />
+		<Edge start="12" end="10" weight="2" />
+		<Edge start="12" end="5"  weight="3" />
+		<Edge start="12" end="6"  weight="2" />
+		<Edge start="12" end="13" weight="2" />
+		<Edge start="12" end="16" weight="1" />
+		<Edge start="12" end="11" weight="1" />
+		<Edge start="13" end="6"  weight="4" />
+		<Edge start="13" end="12" weight="2" />
+		<Edge start="13" end="16" weight="2" />
+		<Edge start="13" end="17" weight="1" />
+		<Edge start="13" end="14" weight="1" />
+		<Edge start="13" end="15" weight="2" />
+		<Edge start="14" end="6"  weight="3" />
+		<Edge start="14" end="8"  weight="1" />
+		<Edge start="14" end="15" weight="1" />
+		<Edge start="14" end="13" weight="1" />
+		<Edge start="15" end="8"  weight="3" />
+		<Edge start="15" end="14" weight="1" />
+		<Edge start="15" end="13" weight="2" />
+		<Edge start="15" end="17" weight="4" />
+		<Edge start="16" end="11" weight="1" />
+		<Edge start="16" end="12" weight="1" />
+		<Edge start="16" end="13" weight="2" />
+		<Edge start="16" end="17" weight="1" />
+		<Edge start="17" end="16" weight="1" />
+		<Edge start="17" end="13" weight="1" />
+		<Edge start="17" end="15" weight="4" />
+	</Edges>
+	<GreenNodes>
+		<!--必经结点-->
+		<Node index="7" />
+		<Node index="12" />
+	</GreenNodes>
+	<GreenEdges>
+		<!--必经线段-->
+		<!--注意：此处仅需存储单向路径-->
+		<Edge start="2"  end="4"  weight="2" />
+		<Edge start="13" end="14" weight="1" />
+	</GreenEdges>
+	<RedNodes>
+		<!--不经结点-->
+		<!--格式与必经结点相同-->
+	</RedNodes>
+	<RedEdges>
+		<!--不经线段-->
+		<!--注意：双向都需要存储-->
+		<Edge start="11" end="12" weight="1" />
+		<Edge start="12" end="11" weight="1" />
+	</RedEdges>
+</Graph>
